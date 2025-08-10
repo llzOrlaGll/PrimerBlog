@@ -9,7 +9,7 @@
         <header>
         <h1>Mi Blog</h1>
         <nav>
-            <ul>
+            <ul> <!--Barra de navegación principal -->
                 <li><a href="#Inicio">Inicio</a></li>
                 <li><a href="#SobreMi">Sobre mí</a></li>
                 <li><a href="#preguntas">Preguntas frecuentes</a></li>
@@ -17,7 +17,7 @@
             </ul>
         </nav>
     </header>
-    <aside>
+    <aside> <!--se supone que esto se muve pero no se esta usadno CSS o Javascript-->
         <nav>
             <ul>
                 <li><a href="#Inicio">Inicio</a></li>
@@ -27,7 +27,7 @@
             </ul>
         </nav>
     </aside>
-    <main>
+    <main> <!--Sección pricipal del blog-->
         <section class="Inicio" id ="Inicio">
             <h2>Bienvenido a mi blog</h2>
             <p>Aquí encontrarás artículos sobre diversos temas de interés.</p>
@@ -38,7 +38,7 @@
             <p>Hola, soy un apasionado de la escritura y me encanta compartir mis pensamientos y experiencias.</p>
         </section>
     </main>
-    <section class="preguntas" id="preguntas">
+    <section class="preguntas" id="preguntas"> <!--Sección secundaria-->
         <h3>Preguntas Frecuentes</h3>
         <ul>
             <li>Pregunta 1
@@ -55,14 +55,36 @@
         </ul>
         
     </section>
-    <section class="Contacto" id="Contacto">
+    <section class="Contacto" id="Contacto"> <!--Formulario de contacto-->
         <h2>Contacto</h2>
         <table>
-
+            <thead>
+                <th>Nombre</th>
+                <th>Email</th>
+                <th>Telefono</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Kevin Ortiz</td>
+                    <td>Kevin@gmail.com</td>
+                    <td>123456789</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Para más información, completa el formulario a continuación.</td>
+                </tr>
+            </tfoot>
         </table>
         <form action="#" method="post">
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" name="nombre" required>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+            <label for="numero">Número:</label>
+            <input type="number" id="numero" name="numero" required>
+
+
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
             <label for="mensaje">Mensaje:</label>
