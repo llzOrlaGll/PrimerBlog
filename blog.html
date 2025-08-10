@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
 </head>
+
 <body>
         <header>
         <h1>Mi Blog</h1>
@@ -17,6 +18,7 @@
             </ul>
         </nav>
     </header>
+
     <aside> <!--se supone que esto se muve pero no se esta usadno CSS o Javascript-->
         <nav>
             <ul>
@@ -27,6 +29,7 @@
             </ul>
         </nav>
     </aside>
+
     <main> <!--Sección pricipal del blog-->
         <section class="Inicio" id ="Inicio">
             <h2>Bienvenido a mi blog</h2>
@@ -37,6 +40,7 @@
             <h2>Sobre mí</h2>
             <p>Hola, soy un apasionado de la escritura y me encanta compartir mis pensamientos y experiencias.</p>
         </section>
+    
     </main>
     <section class="preguntas" id="preguntas"> <!--Sección secundaria-->
         <h3>Preguntas Frecuentes</h3>
@@ -53,9 +57,9 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente cupiditate ipsa natus quaerat delectus quas veniam ab incidunt accusamus odio, obcaecati voluptatem cumque magni tenetur reiciendis quisquam qui impedit maxime!</p>
             </li>
         </ul>
-        
     </section>
-    <section class="Contacto" id="Contacto"> <!--Formulario de contacto-->
+
+    <section class="Contacto" id="Contacto">> <!--Datos de contacto-->
         <h2>Contacto</h2>
         <table>
             <thead>
@@ -76,6 +80,9 @@
                 </tr>
             </tfoot>
         </table>
+    </section>
+
+    <section> <!--Formulario-->
         <form action="#" method="post">
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" name="nombre" required>
@@ -83,14 +90,19 @@
             <input type="text" id="apellido" name="apellido" required>
             <label for="numero">Número:</label>
             <input type="number" id="numero" name="numero" required>
-
-
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" required>
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
             <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" required></textarea>
+            <input type="text" id="genero" name="genero" required>
+            <label for="text">Genero:</label>
+            <textarea id="Gustos" name="Gustos" required></textarea>
+            <input type="checkbox" id="TYC" name="TYC" required>
+            <label for="TYC">Acepta terminos y condiciones:</label>
             <button type="submit">Enviar</button>
         </form>
+    </section>
     <footer>
         <p>&copy; 2025 Mi Blog. Todos los derechos reservados.</p>
     </footer>
