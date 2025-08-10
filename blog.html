@@ -76,52 +76,68 @@
             </tbody>
             <tfoot>
                 <tr>
-                    <td colspan="3">Para más información, completa el formulario a continuación.</td>
+                    <td colspan="3">Contactese con nosotros</td>
                 </tr>
             </tfoot>
         </table>
     </section>
 
     <section> <!--Formulario-->
+        <fieldset>
+            <legend>Formulario de Contacto</legend>
+            <p>Para mas información, completa el siguiente formulario para ponerte en contacto conmigo.</p>
+        </fieldset><br>
         <form action="#" method="post">
             <div>
                 <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" name="nombre" required>
-            </div>
+            </div><br>
             <div>
                 <label for="apellido">Apellido:</label>
                 <input type="text" id="apellido" name="apellido" required>
-            </div>
+            </div><br>
             <div>
                 <label for="telefono">Teléfono:</label>
-                <input type="tel" id="telefono" name="telefono" required>
-            </div>
+                <input type="number" id="telefono" name="telefono" maxlength="10" minlength="10">
+            </div><br>
             <div>
                 <label for="direccion">Dirección:</label>
                 <input type="text" id="direccion" name="direccion" required>
-            </div>
+            </div><br>
             <div>
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
-            </div>
+            </div><br>
             <div>
                 <label for="genero">Genero:</label>
                 <input type="text" id="genero" name="genero" required>
-            </div>
+            </div><br>
             <div>
                 <label for="text">Mensaje:</label>
                 <textarea id="Gustos" name="Gustos" required></textarea>
-            </div>
+            </div><br>
             <div>
                 <input type="checkbox" id="TYC" name="TYC" required>
                 <label for="TYC">Acepta terminos y condiciones:</label>
-            </div>
+            </div><br>
             <div>
                 <button type="submit">Enviar</button>
             </div>
         </form>
+        <legend>
+            <h4>Gracias por visitar mi blog</h4>
+            <p>Espero que encuentres contenido interesante y útil.</p>
+        </legend>
     </section>
     <footer>
+        <nav>
+            <ul> <!--Barra de navegación pie de pagina -->
+                <li><a href="#Inicio">Inicio</a></li>
+                <li><a href="#SobreMi">Sobre mí</a></li>
+                <li><a href="#preguntas">Preguntas frecuentes</a></li>
+                <li><a href="#Contacto">Contacto</a></li>
+            </ul>
+        </nav>
         <p>&copy; 2025 Mi Blog. Todos los derechos reservados.</p>
     </footer>
 </body>
